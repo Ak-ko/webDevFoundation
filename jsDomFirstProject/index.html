@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM Project | Creative Coder</title>
+    <link rel="stylesheet" href="./src/css/output.css" />
+  </head>
+  <body class="overflow-hidden">
+    <!-- NavBar -->
+    <nav class="py-4">
+      <div class="container flex items-center justify-between">
+        <div class="w-[100px] h-[100px]">
+          <!-- logo  -->
+          <a href="#"><img src="./src/assets/img/logo.png" alt="logo" /></a>
+        </div>
+        <div class="flex gap-x-10">
+          <a href="#">Home</a>
+          <a href="#">Menu</a>
+          <a href="#">What's New</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Section -->
+    <main class="container flex items-center justify-between">
+      <!-- left side -->
+      <div class="mb-[340px] max-w-[700px]">
+        <h1 class="text-[80px]">
+          It's not just Coffee<br />
+          It's
+          <span id="starbuck__text" class="font-bold text-green-800"
+            >Starbucks</span
+          >
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+          accusamus temporibus repellat molestias optio praesentium. Harum dicta
+          soluta fuga laudantium qui officia, perspiciatis, architecto ducimus
+          eius voluptatibus deserunt, maiores necessitatibus?
+        </p>
+        <button
+          class="bg-green-800 py-3 px-5 uppercase mt-5 rounded-3xl text-white font-bold"
+        >
+          Learn More
+        </button>
+      </div>
+      <!-- right side  -->
+      <div class="relative w-[800px] h-[100vh]">
+        <div
+          id="buck__background"
+          class="2xl:w-[1500px] 2xl:h-[1500px] lg:w-[1500px] lg:h-[1500px] lg:top-[10%] lg:left-[10%] absolute 2xl:top-[19%] 2xl:left-[20%] bg-green-800 z-[-1] rounded-full"
+        ></div>
+
+        <!-- First Photo -->
+        <div
+          class="2xl:w-[370px] 2xl:translate-y-[200px] translate-x-[250px] lg:translate-y-[100px] lg:w-[350px]"
+          id="bigBuck"
+        >
+          <img src="./src/assets/img/buck1.png" alt="buck1" />
+        </div>
+        <!-- Second Photo -->
+        <div
+          class="hidden 2xl:w-[370px] 2xl:translate-y-[200px] translate-x-[250px] lg:translate-y-[100px] lg:w-[350px]"
+        >
+          <img src="./src/assets/img/buck2.png" alt="buck2" />
+        </div>
+        <!-- Third Photo -->
+        <div
+          class="hidden 2xl:w-[370px] 2xl:translate-y-[200px] translate-x-[250px] lg:translate-y-[100px] lg:w-[350px]"
+        >
+          <img src="./src/assets/img/buck3.png" alt="buck3" />
+        </div>
+      </div>
+    </main>
+    <footer
+      class="flex items-end absolute top-0 w-full h-[100vh] justify-center pb-4"
+    >
+      <div class="flex gap-10">
+        <!-- First Photo -->
+        <div
+          class="w-[60px] cursor-pointer hover:translate-y-[-10px] transition-all duration-500 small__starbuck"
+          id="1"
+        >
+          <img src="./src/assets/img/buck1.png" alt="buck1" />
+        </div>
+        <!-- Second Photo -->
+        <div
+          class="w-[60px] cursor-pointer hover:translate-y-[-10px] transition-all duration-500 small__starbuck"
+          id="2"
+        >
+          <img src="./src/assets/img/buck2.png" alt="buck2" />
+        </div>
+        <!-- Third Photo -->
+        <div
+          class="w-[50px] translate-y-[-5px] ms-2 cursor-pointer hover:translate-y-[-10px] transition-all duration-500 small__starbuck"
+          id="3"
+        >
+          <img src="./src/assets/img/buck3.png" alt="buck3" />
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      const starBuck = document.querySelector(".small__starbuck");
+      const starBuckBig = document.getElementById("bigBuck");
+
+      starBuck.addEventListener("click", changeTheme);
+
+      function changeTheme() {
+        console.log("hello");
+      }
+    </script>
+  </body>
+</html>
