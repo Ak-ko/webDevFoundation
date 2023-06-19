@@ -1,10 +1,10 @@
 .navbar-brand {
-  font-family: "Playfair Display", serif !important;
+  font-family: 'Playfair Display', serif !important;
   font-style: italic !important;
 }
 
 .playfair {
-  font-family: "Playfair Display", serif !important;
+  font-family: 'Playfair Display', serif !important;
 }
 
 .italic {
@@ -146,7 +146,7 @@
 }
 
 .background-image {
-  background-image: url("./assets/coffeeBg.jpg");
+  background-image: url('./assets/coffeeBg.jpg');
   background-size: cover;
   position: absolute;
   top: 0;
@@ -158,7 +158,7 @@
 }
 
 .overlay {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -211,7 +211,7 @@
 }
 
 .form-control::placeholder {
-  font-family: "Playfair Display", serif !important;
+  font-family: 'Playfair Display', serif !important;
 }
 
 .form-control:focus,
@@ -281,7 +281,7 @@
 }
 
 .nav-active::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   left: 0;
@@ -289,7 +289,6 @@
   background-color: #ffc107;
   bottom: 0;
 }
-
 .carousel-indicators .active {
   background-color: #ffc107 !important;
 }
