@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .each__icon {
+    @apply w-[80px] h-[80px] rounded-full flex justify-center items-center bg-gray-100 p-3;
+  }
+
+  .top__header__nav {
+    @apply flex justify-center mt-11 gap-8;
+  }
+}
+
+.container {
+  @apply max-w-[1500px] mx-auto;
+}

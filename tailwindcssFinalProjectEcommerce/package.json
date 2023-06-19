@@ -1,0 +1,20 @@
+{
+  "name": "tailwindcssfinalprojectecommerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss --input ./src/assets/css/input.css --output ./src/assets/css/output.css --watch",
+    "build": "tailwindcss --input ./src/assets/css/input.css --output ./src/assets/css/output.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24"
+  }
+}

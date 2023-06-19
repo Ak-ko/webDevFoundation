@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind | Ecommerce</title>
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./src/assets/css/output.css" />
+  </head>
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+    @media (min-width: 800px) {
+      .grid__first__template__row__for__cards {
+        grid-template-rows: 400px 300px;
+      }
+
+      .grid__second__template__row__for__cards {
+        grid-template-rows: 300px 400px;
+      }
+    }
+  </style>
+  <body>
+    <!-- Navbar  -->
+    <nav class="p-7">
+      <div class="container flex justify-between items-center">
+        <div class="flex items-center">
+          <div>
+            <!-- Toggle Button  -->
+            <div
+              class="md:hidden block mt-1 mr-7 w-[15px] h-[2px] bg-black relative before:absolute before:-top-[7px] before:left-0 before:bg-black before:w-full before:h-full"
+            ></div>
+          </div>
+          <div class="gap-4 md:flex hidden">
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Collection</a>
+          </div>
+        </div>
+
+        <div>
+          <!-- Brand  -->
+          <h3 class="text-xl">Ecommerce</h3>
+        </div>
+
+        <div class="flex gap-9">
+          <!-- links  -->
+          <div class="md:flex gap-4 hidden">
+            <a href="#">LookBook</a>
+            <a href="#">Our World</a>
+            <a href="#">Pages</a>
+          </div>
+          <!-- icons  -->
+          <div class="flex md:gap-4 gap-4">
+            <div>
+              <i class="fa-solid fa-magnifying-glass text-xl"></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-cart-shopping text-xl"></i>
+            </div>
+            <div>
+              <i class="fa-regular fa-heart text-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section  -->
+    <section class="container">
+      <div
+        class="lg:flex lg:justify-between justify-center bg-primary before:w-[calc(100%+10px)] before:h-[calc(100%+10px)] before:absolute before:border-2 before:border-primary before:top-[-5px] before:left-[-5px] relative px-8 min-h-[500px]"
+      >
+        <div
+          class="flex flex-col md:self-center md:ps-9 md:mt-4 md:pt-0 pt-11 lg:text-start text-center"
+        >
+          <div
+            class="before:inline-block before:w-[20px] before:h-[2px] before:bg-black flex items-center gap-3 text-gray-500 before:text-gray-400 lg:mx-0 mx-auto"
+          >
+            Find Your Signature Collection
+          </div>
+          <span class="md:text-[70px] text-[50px] font-thin">
+            Elevate Your<br />
+            <h1 class="font-semibold">Wardrobe</h1>
+          </span>
+          <p>
+            Shop Now
+            <i class="fa-solid fa-caret-right"></i>
+          </p>
+          <div class="flex items-center gap-2 mt-12 lg:mx-0 mx-auto">
+            <span class="text-gray-400">01</span>
+            <div class="w-[40px] h-[2px] bg-black"></div>
+            <span>02</span>
+            <div class="w-[40px] h-[2px] bg-black"></div>
+            <span class="text-gray-400">03</span>
+          </div>
+        </div>
+
+        <!-- hero image  -->
+        <div
+          class="lg:pe-[80px] lg:scale-[1.1] lg:self-end lg:mb-11 lg:mt-[5px] mt-8 lg:ms-0 md:ms-[30px] ms-8"
+        >
+          <img src="./src/assets/img/lady1.png" alt="hero image" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Icon Section  -->
+    <section class="pt-[6rem]">
+      <h2 class="text-center text-3xl">Top Categories</h2>
+      <div
+        class="mt-11 container flex md:flex-row flex-col items-center md:items-start md:gap-0 gap-y-8 md:justify-evenly"
+      >
+        <!-- each icon with label  -->
+        <div>
+          <div class="each__icon">
+            <img src="./src/assets/svgs/handbag.svg" alt="handbag" />
+          </div>
+          <div class="mt-2">Handbags</div>
+        </div>
+        <div>
+          <div class="each__icon">
+            <img src="./src/assets/svgs/handbag.svg" alt="handbag" />
+          </div>
+          <div class="mt-2">Handbags</div>
+        </div>
+        <div>
+          <div class="each__icon">
+            <img src="./src/assets/svgs/handbag.svg" alt="handbag" />
+          </div>
+          <div class="mt-2">Handbags</div>
+        </div>
+        <div>
+          <div class="each__icon">
+            <img src="./src/assets/svgs/handbag.svg" alt="handbag" />
+          </div>
+          <div class="mt-2">Handbags</div>
+        </div>
+        <div class="md:block hidden">
+          <div class="each__icon">
+            <img src="./src/assets/svgs/handbag.svg" alt="handbag" />
+          </div>
+          <div class="mt-2">Handbags</div>
+        </div>
+        <div class="md:block hidden">
+          <div class="each__icon">
+            <img src="./src/assets/svgs/handbag.svg" alt="handbag" />
+          </div>
+          <div class="mt-2">Handbags</div>
+        </div>
+        <div class="md:block hidden">
+          <div class="each__icon">
+            <img src="./src/assets/svgs/handbag.svg" alt="handbag" />
+          </div>
+          <div class="mt-2">Handbags</div>
+        </div>
+        <div class="md:block hidden">
+          <div class="each__icon">
+            <img src="./src/assets/svgs/handbag.svg" alt="handbag" />
+          </div>
+          <div class="mt-2">Handbags</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top Collection  -->
+    <section class="pt-[6rem] pb-5">
+      <h1 class="text-center text-3xl">Our Top Collection</h1>
+      <!-- top header nav  -->
+      <div class="top__header__nav">
+        <a href="#" class="text-lg">All</a>
+        <a href="#" class="md:block hidden text-lg">Featured</a>
+        <a href="#" class="text-lg">Popular</a>
+        <a href="#" class="md:block hidden text-lg">Sale</a>
+        <a href="#" class="text-lg">Best Rated</a>
+      </div>
+
+      <!-- card container  -->
+      <div
+        class="container flex md:flex-row flex-col md:items-start items-center justify-evenly gap-4 mt-12"
+      >
+        <!-- each card  -->
+        <div class="max-w-[300px] overflow-hidden">
+          <div class="bg-gray-100 pt-5 h-[400px] flex items-end">
+            <img
+              class="scale-[1.3] mb-9"
+              src="./src/assets/img/model.png"
+              alt="model"
+            />
+          </div>
+          <div class="mt-5 flex justify-between px-3">
+            <div>
+              <span class="text-gray-400">Dress</span>
+              <h3>Cropped Leather Jacket</h3>
+              <span>$299</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-heart text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-[300px] overflow-hidden">
+          <div class="bg-gray-100 pt-5 h-[400px] flex items-end">
+            <img
+              class="scale-[1.3] mb-9"
+              src="./src/assets/img/model.png"
+              alt="model"
+            />
+          </div>
+          <div class="mt-5 flex justify-between px-3">
+            <div>
+              <span class="text-gray-400">Dress</span>
+              <h3>Cropped Leather Jacket</h3>
+              <span>$299</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-heart text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-[300px] overflow-hidden">
+          <div class="bg-gray-100 pt-5 h-[400px] flex items-end">
+            <img
+              class="scale-[1.3] mb-9"
+              src="./src/assets/img/model.png"
+              alt="model"
+            />
+          </div>
+          <div class="mt-5 flex justify-between px-3">
+            <div>
+              <span class="text-gray-400">Dress</span>
+              <h3>Cropped Leather Jacket</h3>
+              <span>$299</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-heart text-xl"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-[300px] overflow-hidden">
+          <div class="bg-gray-100 pt-5 h-[400px] flex items-end">
+            <img
+              class="scale-[1.3] mb-9"
+              src="./src/assets/img/model.png"
+              alt="model"
+            />
+          </div>
+          <div class="mt-5 flex justify-between px-3">
+            <div>
+              <span class="text-gray-400">Dress</span>
+              <h3>Cropped Leather Jacket</h3>
+              <span>$299</span>
+            </div>
+            <div>
+              <i class="fa-regular fa-heart text-xl"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LookBook -->
+    <section class="pt-[6rem] pb-5 bg-gray-100">
+      <h1 class="text-center text-3xl">LookBook</h1>
+      <!-- card container  -->
+      <div
+        class="container flex md:flex-row flex-col md:items-start items-center md:gap-y-0 gap-y-5 justify-evenly gap-4 mt-12"
+      >
+        <!-- each card  -->
+        <div class="max-w-[300px] overflow-hidden">
+          <div class="bg-primary pt-5 h-[400px] flex items-end">
+            <img
+              class="scale-[1.3] mb-9"
+              src="./src/assets/img/model.png"
+              alt="model"
+            />
+          </div>
+          <div class="mt-5">
+            <h3>WOMEN SEASON</h3>
+            <span>Floral Troper</span>
+          </div>
+        </div>
+
+        <div class="max-w-[300px] overflow-hidden">
+          <div class="bg-primary pt-5 h-[400px] flex items-end">
+            <img
+              class="scale-[1.3] mb-9"
+              src="./src/assets/img/model.png"
+              alt="model"
+            />
+          </div>
+          <div class="mt-5">
+            <h3>WOMEN SEASON</h3>
+            <span>Floral Troper</span>
+          </div>
+        </div>
+
+        <div class="max-w-[300px] overflow-hidden">
+          <div class="bg-primary pt-5 h-[400px] flex items-end">
+            <img
+              class="scale-[1.3] mb-9"
+              src="./src/assets/img/model.png"
+              alt="model"
+            />
+          </div>
+          <div class="mt-5">
+            <h3>WOMEN SEASON</h3>
+            <span>Floral Troper</span>
+          </div>
+        </div>
+
+        <div class="max-w-[300px] overflow-hidden">
+          <div class="bg-primary pt-5 h-[400px] flex items-end">
+            <img
+              class="scale-[1.3] mb-9"
+              src="./src/assets/img/model.png"
+              alt="model"
+            />
+          </div>
+          <div class="mt-5">
+            <h3>WOMEN SEASON</h3>
+            <span>Floral Troper</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sample Design Card Section -->
+    <section class="pt-11">
+      <div
+        class="container grid lg:grid-cols-2 grid-cols-1 gap-4 h-200px md:p-[100px]"
+      >
+        <div
+          class="grid grid-cols-1 gap-4 grid__first__template__row__for__cards"
+        >
+          <!-- card  -->
+          <div
+            class="flex md:flex-row flex-col justify-between gap-4 bg-gray-100"
+          >
+            <div
+              class="md:self-end md:text-start text-center md:mt-0 mt-[2rem] flex flex-col gap-2 pl-5 pb-[20px]"
+            >
+              <span class="text-lg">Casual Collection</span>
+              <h2 class="text-3xl">New Arrivals</h2>
+              <p>
+                Shop Now
+                <i class="fa-solid fa-caret-right"></i>
+              </p>
+            </div>
+            <div class="self-end lg:ms-[5rem]">
+              <img
+                class="lg:scale-[1.5] lg:mb-[3.8rem]"
+                src="./src/assets/img/lady1.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <!-- card  -->
+          <div class="flex md:flex-row flex-col gap-4 bg-primary">
+            <div
+              class="md:self-end md:text-start text-center md:mt-0 mt-[2rem] flex flex-col gap-2 pl-5 pb-[20px]"
+            >
+              <span class="text-lg">Casual Collection</span>
+              <h2 class="text-3xl">New Arrivals</h2>
+              <p>
+                Shop Now
+                <i class="fa-solid fa-caret-right"></i>
+              </p>
+            </div>
+            <div class="self-end">
+              <img src="./src/assets/img/lady1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 gap-4 grid__second__template__for__cards">
+          <!-- card  -->
+          <div
+            class="flex md:flex-row flex-col items-center lg:items-start gap-4 flex-grow-0 bg-primary"
+          >
+            <div
+              class="md:self-end md:text-start text-center md:mt-0 mt-[2rem] flex flex-col gap-2 pl-5 pb-[20px]"
+            >
+              <span class="text-lg">Casual Collection</span>
+              <h2 class="text-3xl">New Arrivals</h2>
+              <p>
+                Shop Now
+                <i class="fa-solid fa-caret-right"></i>
+              </p>
+            </div>
+            <div class="self-end">
+              <img src="./src/assets/img/lady1.png" alt="" />
+            </div>
+          </div>
+
+          <!-- card  -->
+          <div
+            class="flex md:flex-row flex-col justify-between gap-4 bg-gray-100"
+          >
+            <div
+              class="md:self-end md:text-start text-center md:mt-0 mt-[2rem] flex flex-col gap-2 pl-5 pb-[20px]"
+            >
+              <span class="text-lg">Casual Collection</span>
+              <h2 class="text-3xl">New Arrivals</h2>
+              <p>
+                Shop Now
+                <i class="fa-solid fa-caret-right"></i>
+              </p>
+            </div>
+            <div class="md:self-end lg:ms-[5rem]">
+              <img
+                class="lg:scale-[1.5] lg:mb-[3.8rem]"
+                src="./src/assets/img/lady1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Collection Section  -->
+    <section class="pt-[2rem] pb-5">
+      <h1 class="text-center text-3xl">Featured Collection</h1>
+
+      <!-- card container  -->
+      <div
+        class="container flex md:flex-row flex-col items-center md:items-start md:justify-evenly gap-4 mt-12"
+      >
+        <!-- each card  -->
+        <div class="max-w-[300px]">
+          <div class="bg-gray-100 flex items-end">
+            <img
+              class="object-cover"
+              src="./src/assets/img/the-cleveland-museum-of-art-hU3R2MUJgLg-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="mt-5 flex justify-between">
+            <span class="text-gray-400">By Admin</span>
+            <span class="text-gray-400">16 Jun, 2023</span>
+          </div>
+          <div>Exploring the wonder of our wonderlands.</div>
+        </div>
+
+        <div class="max-w-[300px]">
+          <div class="bg-gray-100 flex items-end">
+            <img
+              class="object-cover"
+              src="./src/assets/img/the-cleveland-museum-of-art-hU3R2MUJgLg-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="mt-5 flex justify-between">
+            <span class="text-gray-400">By Admin</span>
+            <span class="text-gray-400">16 Jun, 2023</span>
+          </div>
+          <div>Exploring the wonder of our wonderlands.</div>
+        </div>
+
+        <div class="max-w-[300px]">
+          <div class="bg-gray-100 flex items-end">
+            <img
+              class="object-cover"
+              src="./src/assets/img/the-cleveland-museum-of-art-hU3R2MUJgLg-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="mt-5 flex justify-between">
+            <span class="text-gray-400">By Admin</span>
+            <span class="text-gray-400">16 Jun, 2023</span>
+          </div>
+          <div>Exploring the wonder of our wonderlands.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="bg-[#222] text-white p-11">
+      <!-- container  -->
+      <div
+        class="grid lg:grid-cols-5 md:grid-cols-2 md:gap-y-6 md:gap-x-5 gap-y-8 conatiner"
+      >
+        <!-- left most section  -->
+        <div>
+          <h2 class="text-bold mb-5 text-xl">Ecommerce</h2>
+          <p class="text-gray-400 text-md mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+            unde corrupti! Nihil a pariatur repudiandae vel ad, quidem quaerat
+            facere? A, ipsum ex. Id laboriosam
+          </p>
+          <!-- icons container  -->
+          <div class="flex gap-5">
+            <div>
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:justify-self-center">
+          <h1 class="mb-5">COMPANY</h1>
+          <ul class="space-y-3 text-gray-400">
+            <li>Home</li>
+            <li>Listening</li>
+            <li>Property</li>
+            <li>Services</li>
+          </ul>
+        </div>
+
+        <div>
+          <h1 class="mb-5">HELP</h1>
+          <ul class="space-y-3 text-gray-400">
+            <li>Custom Support</li>
+            <li>Term & Conditions</li>
+            <li>Privacy & Policy</li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div>
+          <h1 class="mb-5">CONTACT US</h1>
+          <ul class="space-y-3 text-gray-400">
+            <li>09 422 733 00</li>
+            <li>johndoe@demo.com</li>
+            <li>street, London</li>
+          </ul>
+        </div>
+
+        <div>
+          <h1 class="mb-5">NEWSLETTER</h1>
+          <p class="text-gray-400 mb-5">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Necessitatibus, incidunt! Neque, eaque earum? Enim officiis sint
+            expedita rerum perspiciatis natus dolore! Nulla dolorum
+            necessitatibus velit fugit
+          </p>
+          <div class="">
+            <input
+              type="text"
+              class="bg-transparent text-white border border-gray-300 p-2 ps-4 w-[220px] focus:outline-none"
+              placeholder="enter email"
+            />
+            <button class="bg-white py-[9px] text-black px-4 ms-[-10px]">
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
