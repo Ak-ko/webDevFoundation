@@ -6,9 +6,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: [
-
-      ],
+      colors:{
+        'starbuckgreen' : '#166534',
+        'starbuckpink': '#D7B4AD',
+        'starbuckpurple': '#A82180',
+      }
     },
   },
   plugins: [],
