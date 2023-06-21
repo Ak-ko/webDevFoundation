@@ -278,6 +278,13 @@
   }
 }
 
+@media (max-width: 800px) {
+  .circle__container {
+    top: 55%;
+    left: 40%;
+  }
+}
+
 @media (max-width: 500px) {
   .best__seller__card__container {
     padding: 0 30px;
